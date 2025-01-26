@@ -1,0 +1,121 @@
+@import 'display';
+@import 'vars';
+%bdy{
+    background: $primarycolor;
+    width:100%;
+    min-height: 100vh;
+}
+body{
+    @extend %dff;
+    @extend %bdy;
+} 
+.container{
+    @extend %dfc;
+    padding:40px 30px 10px 30px;
+    border:2px solid $graycolor;
+}
+.content{
+    padding:20px 0;
+    
+    & img{
+        width:200px;
+        margin-left:25px;
+        margin-bottom: 50px;
+    }
+    & label{
+        @extend %dfa;
+        position: relative;
+
+        & span{
+            position: absolute;
+            left:8px;
+            font-size: 13px;
+            opacity:1;
+        }
+    }
+    }
+.form{
+    @extend %dfc;
+    row-gap: 9px;
+    & button{
+        background: $thirdcolor;
+        border:0;
+        padding:5px;
+        color:$primarycolor;
+        border-radius: 20px;
+        cursor:pointer;
+    
+    }
+}
+.inputs input{
+    width:270px;
+    height:38px;
+    background: $secondcolor;
+    &:focus{
+        border:0;
+        background: $secondcolor;
+        & + span{
+            opacity:0;
+        }
+        }
+}
+.separator{
+    @extend %dfb;
+    margin-top:10px;
+    column-gap: 8px;
+    & span:nth-child(1){
+        display:block;
+        height:1px;
+        background: $graycolor;
+        width:100%;
+        
+
+
+    }
+    & span:nth-child(3){
+        display:block;
+        height:1px;
+        width:100%;
+        background: $graycolor;
+        
+
+
+    }
+
+}
+.fb{
+    margin-top:15px;
+    margin-left:20px;
+    & i{
+        font-size:18px;
+        margin-right:5px;
+        color:$thirdcolor;
+    }
+    & a{
+        text-decoration: none;
+        color:$thirdcolor;
+    }
+}
+
+.forget{
+    margin-top: 10px;
+    margin-left: 25px;
+    & a{
+        text-decoration: none;
+        color:$fcolor;
+    }
+}
+.sign-up{
+    margin-top: 15px;
+    border:2px solid $graycolor;
+    padding:35px;
+    & p{
+        color:$fcolor;
+        & a{
+            text-decoration: none;
+            color:$thirdcolor;
+            font-weight: bold;
+        }
+    }
+    
+}

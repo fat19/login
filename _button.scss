@@ -1,0 +1,14 @@
+%df{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%dfc{
+    display:flex;
+    flex-direction: column;
+}
+%dfb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
